@@ -1,0 +1,58 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+#clock{
+    width: 500px;
+    height: 500px;
+    background-image: url('click.jpg');
+    background-size: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.hr-hand, .min-hand, .sec-hand{
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+.sec-hand{
+    background: red;
+    width: 8px;
+    height: 140px;
+    top: 29%;
+    left: 49.2%;
+}
+.min-hand{
+    background: blue;
+    width: 8px;
+    height: 100px;
+    top: 37%;
+    left: 49.2%;
+    }
+    
+.hr-hand{
+    background: green;
+    width: 8px;
+    height: 70px;
+    top: 43%;
+    left: 49.2%;
+}
+
+.date{
+    top: 50%;
+    left: 55%;
+    border: 1px solid grey;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.left, .right{
+    border: 1px solid grey;
+    width: 65%;
+    height: 100%;
+    font-size: x-large;
+    
+}
